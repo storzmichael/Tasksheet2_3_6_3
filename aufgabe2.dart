@@ -24,12 +24,8 @@ class Groceries {
   Groceries(this.name, this.store, this.manufacturer, this.expiryDate, this.amount, this.unit, this.price);
 
   void giveallInfos() {
-    print("Name: $name");
-    print('Laden: $store');
-    print("Hersteller: $manufacturer");
-    print("MDH: $expiryDate");
-    print("Menge: $amount $unit");
-    print("Preis: $price €");
+    print(
+        "Name: $name\nLaden: $store\nHersteller: $manufacturer\nMDH: $expiryDate\nMenge: $amount $unit\nPreis: $price €");
   }
 }
 
@@ -48,13 +44,8 @@ class Milk extends Groceries {
 
   @override
   void giveallInfos() {
-    print("Name: $name");
-    print('Laden: $store');
-    print("Hersteller: $manufacturer");
-    print('Milchtyp: $milkType');
-    print("MDH: $expiryDate");
-    print("Menge: $amount $unit");
-    print("Preis: $price €");
+    print(
+        "Name: $name\nLaden: $store\nHersteller: $manufacturer\nMilchtyp: $milkType\nMDH: $expiryDate\nMenge: $amount $unit\nPreis: $price €");
   }
 }
 
@@ -64,13 +55,8 @@ class Meat extends Groceries {
       this.meatType);
   @override
   void giveallInfos() {
-    print("Name: $name");
-    print('Laden: $store');
-    print("Hersteller: $manufacturer");
-    print('Meattyp: $meatType');
-    print("MDH: $expiryDate");
-    print("Menge: $amount $unit");
-    print("Preis: $price €");
+    print(
+        "Name: $name\nLaden: $store\nHersteller: $manufacturer\nFleischtyp: $meatType\nMDH: $expiryDate\nMenge: $amount $unit\nPreis: $price €");
   }
 }
 
